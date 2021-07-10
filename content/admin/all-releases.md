@@ -15,7 +15,7 @@ See [{% data variables.product.prodname_enterprise %}](https://github.com/enterp
 
 {% for supportedRelease in enterpriseServerReleases.supported %}
 - [{% data variables.product.prodname_ghe_server %} {{supportedRelease}}](/enterprise-server@{{supportedRelease}})
-{% endfor %}
+{Releases}
 
 ## Deprecated
 
@@ -23,11 +23,11 @@ Documentation for deprecated versions remains available but is no longer maintai
 
 {% for deprecatedRelease in enterpriseServerReleases.deprecatedReleasesWithNewFormat %}
 - [Enterprise Server {{deprecatedRelease}}](/enterprise-server@{{deprecatedRelease}})
-{% endfor %}
+{DeprecatedReleases}
 
 {% for deprecatedReleaseLegacyFormat in enterpriseServerReleases.deprecatedReleasesWithLegacyFormat %}
 - [Enterprise Server {{deprecatedReleaseLegacyFormat}}](/enterprise/{{deprecatedReleaseLegacyFormat}})
-{% endfor %}
+{ deprecatedReleaseLegacyFormat}
 
 ## Deprecated developer documentation
 
@@ -35,4 +35,4 @@ Developer documentation for deprecated versions remains available but is no long
 
 {% for deprecatedDevRelease in enterpriseServerReleases.deprecatedReleasesOnDeveloperSite %}
 - [Enterprise Server {{deprecatedDevRelease}}](https://developer.github.com/enterprise/{{deprecatedDevRelease}})
-{% endfor %}
+{deprecatedDevRelease}
